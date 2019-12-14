@@ -7,6 +7,7 @@
 #// `jekyll serve`. If you change this file, please restart the server process.
 
 #// Site Settings
+theme: jekyll-theme-merlot
 title                    : "Cufy"
 #title_separator          : "-"
 name                     : &name "Cufy"
@@ -309,5 +310,3 @@ author:
 #  clippings: all
 #  ignore:
 #    envs: development
-
-theme: jekyll-theme-merlot
