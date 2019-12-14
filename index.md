@@ -2,7 +2,7 @@
 I'm Sulaiman Obody, Currently studying Computer Science. Planning to work on google android development team. Also currently i work alone.
 # about Cufy
 Cufy is organization made by me. An organization all about students and beginners studying together helping each other like they are pros.
-# [Cufy-Core](github.com/lsafer/cufy-core)
+# [Cufy-Core](github.com/lsafer/Cufy-Core)
 The main dependency for all Cufy Java/Groovy Repositories.
 # [Cufy-Util](github.com/lsafer/cufy-util)
 A raw static utils for classes.
