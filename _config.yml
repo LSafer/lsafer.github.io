@@ -1,5 +1,6 @@
 theme: jekyll-theme-merlot
 title                    : "Cufy"
+icon                     : "cufy.logo.png"
 
 name                     : &name "Cufy"
 description              : &description "Cufy Official"
