@@ -1,4 +1,68 @@
-### [about me](https://www.github.com/lsafer)
-I'm Sulaiman Obody, Currently studying Computer Science. Planning to work on google android development team. Also currently i work alone.
-### [about Cufy](https://www.github.com/cufyorg)
-Cufy is organization made by me. An organization all about students and beginners studying together helping each other like they are pros.
+<html lang="en">
+    <head>
+        <title>LSafer</title>
+        <script>
+            window.onload = function() {
+              let link = top.document.createElement("link");
+              link.type = "image/*";
+              link.rel = "icon";
+              link.href = "https://lsafer.github.io/origin_ic.png";
+              top.document.getElementsByTagName("head")[0].appendChild(link);
+            };
+        </script>
+    </head>
+</html>
+
+[cufyorg]:https://www.github.com/cufyorg
+
+# **Me And My Policy**
+
+- ### **Open Source**
+I do not keep my code for myself. I share my code at github for everyone to benefit from it. I just want my name to be kept mentioned for my rights.
+
+- ### **Love to Code**
+I code just because I enjoy coding. I do not mind even if my code have no been used. But I do not code useless code.
+
+---
+
+# **Programming Environments**
+
+- ### **Android Applications**
+I used to make android applications this years and since two years. The applications I make are usage for my libraries.
+
+- ### **Linux Knowledge**
+I know the require knowledge to use linux. And how to deal with the display manager. And the root.
+
+- ### **Lower Level Understanding**
+I know the require knowledge to understand what is the relation between CPU, RAM and ROM and the GPU. And I have read about how to do build a
+running simple system using a simple CPU and a RAM and ROM. And how to output to a real display from ROM just using a simple CPU.
+
+- ### **Concurrent and Threading**
+I can deal with threading. And split the work between threads. I can link between two or more threads. And make them contact and notify each other.
+
+- ### **Code Art**
+I can't write code without making it as simple and advanced as possible. I make my code more beautiful and clear for the reader and me.
+
+- ### **Reflections and Automation**
+When something can be automated using reflection (In java. Or relevant to it). I always take that way and make an automation for it.
+
+- ### **Library Building**
+I have experienced building a java libraries. And I could say that all my experience in building libraries is shorten in one library (7
+ repositories). [<font size="3">(github:cufyorg)</font>][cufyorg]
+
+---
+
+# **Programming Languages**
+
+- ### **Java**
+I'm good at backend. And not bad on front end. I'm good at using reflection. Also good at managing resources. I could deal with any kind of problem
+when it's about interfaces and inheritance.
+
+- ### **groovy**
+I know the basics of groovy. And since it based on java. I can workaround the problems.
+
+- ### **C++**
+I know the basics of C++. With little practice I could be good at it.
+
+- ### **html, CSS, JavaScript**
+I used to program in these languages when I was 15. But after then I start programming in java, I left web development.
