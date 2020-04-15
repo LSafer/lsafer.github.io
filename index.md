@@ -47,8 +47,8 @@ I can not write code without making it as simple and universal as possible. I ma
 When something can be automated using reflection (In Java. Or relevant to it). I always take that way and make automation for it.
 
 - ### **Library Building**
-I have experienced building Java libraries. And I could say that all my experience in building libraries is shortened in one library (7
-repositories). [<font size="3">(github:cufyorg)</font>][cufyorg]
+I have experienced building Java libraries. And I could say that all my experience in building libraries is shortened in one library
+[(the cufy framework)](https://cufyorg.github.io/framework).
 
 ---
 
