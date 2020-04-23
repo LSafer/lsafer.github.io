@@ -13,8 +13,6 @@
     </head>
 </html>
 
-[cufyorg]:https://www.github.com/cufyorg
-
 # **Me And My Policy**
 
 - ### **Open Source**
