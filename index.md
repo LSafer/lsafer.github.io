@@ -6,7 +6,7 @@
               let link = top.document.createElement("link");
               link.type = "image/*";
               link.rel = "icon";
-              link.href = "https://lsafer.github.io/origin_ic.png";
+              link.href = "lsafer.png";
               top.document.getElementsByTagName("head")[0].appendChild(link);
             };
         </script>
