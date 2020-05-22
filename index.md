@@ -3,6 +3,7 @@
         <title>LSafer</title>
         <script>
             window.onload = function() {
+              top.document.title = "LSafer";
               let link = top.document.createElement("link");
               link.type = "image/*";
               link.rel = "icon";
