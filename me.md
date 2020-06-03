@@ -73,11 +73,11 @@ websites using it.
 I have made a lot of projects. Here are some.
 
 - Java
-    - The Cufy Framework: https://framework.cufy.org
+    - The Cufy Framework: [here](https://framework.cufy.org)
 - Android
-    - The Cufy Android Support: https://android.cufy.org/support
-- Applications
-    Sadly All deleted by google from GPlay :(
-    - LS File Explorer: on google (working)
-    - Edge Seek: on google (working)
-    - Advanced User Utilities: on google (concept)
+    - The Cufy Android Support: [here](https://support.cufyx.org)
+- Applications (Sadly All deleted by google from GPlay)
+    - LS File Explorer: on apk-mirror or others (working)
+    - Edge Seek: on apk-mirror or others (working)
+    - Edge Seek Remastered: [here](https://edgeseek.lsafer.net)
+    - Advanced User Utilities: just a concept, you could see it [here](https://github.com/LSafer/Services-Android) or [here](https://github.com/LSafer/AUS-Android)
