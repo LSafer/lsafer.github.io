@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: black;
+}
+
+#container {
+    height: 100vh;
+}
+
+.logo {
+    height: 75vh;
+    width: 75vw;
+    object-fit: cover;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+}
+
+.name {
+    font-size: 300pt;
+    font-family: 'Kaushan Script', cursive;
+    color: purple;
+
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+}
+
+.label {
+    font-size: 100pt;
+    font-family: sans-serif;
+    color: purple;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+}
+
+.text {
+    color: mediumpurple;
+
+    font-size: 30pt;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+}
