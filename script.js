@@ -1,5 +1,4 @@
 //constants
-const DURATION = 37700;
 const CHANGE_AMOUNT = 0.03;
 const CHANGE_RATE = 0.01;
 
