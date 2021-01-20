@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 6.0-c003 79.164527, 2020/10/15-17:48:32        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+         <xmp:CreatorTool>Adobe Photoshop 22.1 (Windows)</xmp:CreatorTool>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #76287c;
+        stroke: #370035;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="197" y="274" width="535" height="534" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="10" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.162"/>
+      <feFlood result="flood" flood-opacity="0.5"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feFlood result="flood-2" flood-color="#654768"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feOffset result="offset-2" dx="-13.442" dy="-26.82"/>
+      <feOffset result="offset-3" dx="13.442" dy="26.82" in="composite-2"/>
+      <feComposite result="composite-3" operator="xor" in="offset-2"/>
+      <feComposite result="composite-4" operator="in" in2="SourceAlpha"/>
+      <feGaussianBlur result="blur-2"/>
+      <feComponentTransfer result="comp">
+        <feFuncA type="linear" slope="0.65"/>
+      </feComponentTransfer>
+      <feComposite result="composite-5" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="lighten" in2="blend"/>
+      <feGaussianBlur result="blur-3" stdDeviation="3.162" in="SourceAlpha"/>
+      <feFlood result="flood-3" flood-opacity="0.4"/>
+      <feComposite result="composite-6" operator="out" in2="blur-3"/>
+      <feOffset result="offset-4" dx="1"/>
+      <feComposite result="composite-7" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-3" mode="multiply" in2="blend-2"/>
+    </filter>
+  </defs>
+  <g style="fill: #76287c; filter: url(#filter)">
+    <path id="path" class="cls-1" d="M408.012,528.446L654.037,290.31a16.983,16.983,0,0,1,24.286,0l26.4,25.551a15.724,15.724,0,0,1,0,23.507L497.236,540.2,704.721,741.031a15.725,15.725,0,0,1,0,23.508l-26.4,25.551a16.983,16.983,0,0,1-24.286,0L408.012,551.953a15.724,15.724,0,0,1,0-23.507h0Zm-202.733,0L451.3,290.31a16.983,16.983,0,0,1,24.286,0l26.4,25.551a15.724,15.724,0,0,1,0,23.507L294.5,540.2,501.988,741.031a15.725,15.725,0,0,1,0,23.508l-26.4,25.551a16.983,16.983,0,0,1-24.286,0L205.279,551.953a15.724,15.724,0,0,1,0-23.507h0Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#path" style="stroke: #370035; filter: none; fill: none"/>
+</svg>
