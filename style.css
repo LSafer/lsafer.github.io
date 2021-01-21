@@ -44,6 +44,14 @@ body {
     opacity: 0;
 }
 
+.icon {
+    height: 15vh;
+    width: 15vw;
+    padding: 2vh 2vw;
+    border: 1px gray solid;
+    border-radius: 10pt;
+}
+
 .name {
     font-size: 300pt;
     font-family: 'Kaushan Script', cursive;
