@@ -11,6 +11,22 @@ body {
     background: black;
 }
 
+.inverted {
+    filter: invert(100%)
+}
+
+.bw {
+    filter: grayscale(100%);
+}
+
+.notext {
+    color: transparent;
+}
+
+.notext:hover {
+    color: transparent;
+}
+
 #container {
     height: 100vh;
 }
