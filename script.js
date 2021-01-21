@@ -1,4 +1,5 @@
 //constants
+const INITIAL_STATE = 100;
 const CHANGE_AMOUNT = 0.03;
 const CHANGE_RATE = 0.01;
 
@@ -37,6 +38,8 @@ const scene = new ScrollMagic.Scene({
 })
     .setPin(container)
     .addTo(controller)
+
+controller.scrollTo(INITIAL_STATE)
 
 //events
 let target = 0
