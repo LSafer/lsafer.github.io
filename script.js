@@ -48,11 +48,13 @@ setInterval(() => {
     const pos = current += Math.round((target - current) * CHANGE_AMOUNT);
 
     elements.forEach(element => {
-        if (pos < element.s || pos > element.e)
+        if (pos < element.s || pos > element.e) {
             element.n.style.opacity = 0;
-        else {
+            element.n.style.display = 'none';
+        } else {
             const x = pos - element.s;
 
+            element.n.style.display = 'block';
             element.n.style.opacity =
                 x < element.f ? x / element.f :
                     x > element.f ? (element.l - x) / element.f :
