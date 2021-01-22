@@ -46,8 +46,8 @@ if (controller.scrollPos() < INITIAL_STATE)
     controller.scrollTo(INITIAL_STATE)
 
 //events
-let target = 0
-let current = 0
+let target = INITIAL_STATE
+let current = INITIAL_STATE
 scene.on('update', e => {
     target = e.scrollPos
 })
