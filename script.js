@@ -39,7 +39,8 @@ const scene = new ScrollMagic.Scene({
     .setPin(container)
     .addTo(controller)
 
-controller.scrollTo(INITIAL_STATE)
+if (controller.scrollPos() < INITIAL_STATE)
+    controller.scrollTo(INITIAL_STATE)
 
 //events
 let target = 0
