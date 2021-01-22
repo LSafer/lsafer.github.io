@@ -11,22 +11,25 @@ const elements = [];
 let lastE = 0
 for (let i = 0; i < container.children.length; i++) {
     const node = container.children[i]
-    const p = Number.parseInt(node.getAttribute('p') || 100);
-    const d = Number.parseInt(node.getAttribute('d') || 0);
-    const f = Number.parseInt(node.getAttribute('f') || 3);
 
-    const s = lastE + p;
-    const e = s + d;
+    if (!node.hasAttribute("ignore")) {
+        const p = Number.parseInt(node.getAttribute('p') || 100);
+        const d = Number.parseInt(node.getAttribute('d') || 0);
+        const f = Number.parseInt(node.getAttribute('f') || 3);
 
-    lastE = e;
+        const s = lastE + p;
+        const e = s + d;
 
-    elements.push({
-        n: node,
-        s: s,
-        e: e,
-        l: d,
-        f: d / f,
-    })
+        lastE = e;
+
+        elements.push({
+            n: node,
+            s: s,
+            e: e,
+            l: d,
+            f: d / f,
+        })
+    }
 }
 
 //observers
