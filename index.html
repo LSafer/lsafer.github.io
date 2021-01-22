@@ -26,21 +26,22 @@
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
             crossorigin="anonymous"></script>
 
-
     <title>LSafer</title>
 </head>
 <body>
 <div id="container">
-    <!--    name   -->
-    <h1 p="0" d="1000" f="10" class="name">LSafer</h1>
-
-    <!--    logo    -->
-    <img p="100" d="800" f="5" class="logo" src="lsafer-back.svg" alt="Infinity Arrow">
-    <img p="-700" d="800" f="5" class="logo" src="lsafer-right.svg" alt="Divide Arrows">
-    <img p="-700" d="800" f="5" class="logo" src="lsafer-left.svg" alt="Multiply Arrows">
+    <!--    navigation  -->
+    <img ignore src="assets/up.svg" alt="Up Arrow"
+         style="height: 5%; width: 5%; display: flex; position: absolute; right: 2%; top: 5%; filter: invert(10%)"
+         onclick="controller.scrollTo((Math.round(controller.scrollPos() / 1100) - 1) * 1100 + 500)"
+    >
+    <img ignore src="assets/down.svg" height="100" width="100" alt="Down Arrow"
+         style="height: 5%; width: 5%; display: flex; position: absolute; right: 2%; bottom: 5%; filter: invert(10%)"
+         onclick="controller.scrollTo((Math.round(controller.scrollPos() / 1100) + 1) * 1100 + 500)"
+    >
 
     <!--    links   -->
-    <div p="100" d="1000" f="10" class="label">
+    <div p="0" d="1000" f="1000" class="label">
         <a href="https://github.com/lsafer" class="notext">
             <img class="icon inverted" src="assets/github.svg" alt="GitHub">
         </a>
@@ -63,12 +64,27 @@
             <img class="icon inverted" src="assets/gplay.svg" alt="Google Play">
         </a>
         <a href="https://stackoverflow.com/users/11816777/lsafer" class="notext">
-            <img class="icon inverted" src="assets/stackoverflow.svg" alt="Stack Overflow">
+            <img class="icon inverted" src="assets/stackoverflow.svg"
+                 alt="Stack Overflow">
         </a>
         <a href="https://forum.xda-developers.com/m/lsaferse.9690512/" class="notext">
             <img class="icon bw" src="assets/xda.svg" alt="Xda Developers">
         </a>
+        <a href="https://framework.cufy.org" class="notext">
+            <img class="icon bw" src="assets/framework.svg" alt="Cufy Framework">
+        </a>
+        <a href="https://jamplate.org" class="notext">
+            <img class="icon bwi" src="assets/jamplate.svg" alt="Jamplate">
+        </a>
     </div>
+
+    <!--    name   -->
+    <h1 p="100" d="1000" f="10" class="name">LSafer</h1>
+
+    <!--    logo    -->
+    <img p="100" d="800" f="5" class="logo" src="lsafer-back.svg" alt="Infinity Arrow">
+    <img p="-700" d="800" f="5" class="logo" src="lsafer-right.svg" alt="Divide Arrows">
+    <img p="-700" d="800" f="5" class="logo" src="lsafer-left.svg" alt="Multiply Arrows">
 
     <!--    1   -->
     <h1 p="100" d="1000" f="4" class="label">

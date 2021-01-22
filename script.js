@@ -1,5 +1,5 @@
 //constants
-const INITIAL_STATE = 100;
+const INITIAL_STATE = 1600;
 const CHANGE_AMOUNT = 0.03;
 const CHANGE_RATE = 0.01;
 

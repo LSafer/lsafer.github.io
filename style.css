@@ -19,6 +19,10 @@ body {
     filter: grayscale(100%);
 }
 
+.bwi {
+    filter: invert(100%) grayscale(100%);
+}
+
 .notext {
     color: transparent;
 }
