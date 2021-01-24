@@ -24,6 +24,7 @@ for (let i = 0; i < container.children.length; i++) {
 
         elements.push({
             n: node,
+            d: node.style.display,
             s: s,
             e: e,
             l: d,
@@ -61,7 +62,7 @@ setInterval(() => {
         } else {
             const x = pos - element.s;
 
-            element.n.style.display = 'block';
+            element.n.style.display = element.d;
             element.n.style.opacity =
                 x < element.f ? x / element.f :
                     x > element.f ? (element.l - x) / element.f :
