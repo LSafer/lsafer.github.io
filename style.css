@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap');
 
+/*  env */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,11 @@ body {
     background: black;
 }
 
+#container {
+    height: 100vh;
+}
+
+/*  modifiers   */
 .inverted {
     filter: invert(100%)
 }
@@ -31,14 +37,11 @@ body {
     color: transparent;
 }
 
-#container {
-    height: 100vh;
-}
-
+/*  visuals  */
 .logo {
-    height: 75vh;
-    width: 75vw;
-    object-fit: cover;
+    height: 150%;
+    width: 100%;
+    object-fit: contain;
 
     position: absolute;
     top: 50%;
@@ -48,16 +51,39 @@ body {
     opacity: 0;
 }
 
+.grid {
+    height: 100%;
+    width: 100%;
+    padding: min(30%, 20vh) min(20%, 20vw);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(10vw, 10vh), 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(max(10vw, 10vh), 1fr));
+    grid-row-gap: max(1vw, 1vh);
+    grid-column-gap: max(1vw, 1vh);
+    justify-content: center;
+    place-items: center;
+
+    position: absolute;
+
+    opacity: 0;
+}
+
 .icon {
-    height: 15vh;
-    width: 15vw;
+    height: max(10vw, 10vh);
+    width: max(10vw, 10vh);
+    object-fit: fill;
+    alignment: center;
+
     padding: 2vh 2vw;
+
     border: 1px gray solid;
     border-radius: 10pt;
 }
 
+/*  text    */
 .name {
-    font-size: 300pt;
+    font-size: min(300pt, 30vw);
     font-family: 'Kaushan Script', cursive;
     color: purple;
 
@@ -71,7 +97,7 @@ body {
 }
 
 .label {
-    font-size: 100pt;
+    font-size: min(100pt, 10vw);
     font-family: sans-serif;
     color: purple;
 
@@ -85,9 +111,9 @@ body {
 }
 
 .text {
+    font-size: min(30pt, 5vw);
     color: mediumpurple;
 
-    font-size: 30pt;
     position: absolute;
     text-align: center;
     top: 50%;
