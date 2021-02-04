@@ -2,36 +2,15 @@
 const INITIAL_STATE = 1600;
 const CHANGE_AMOUNT = 0.03;
 const CHANGE_RATE = 0.01;
+const CHANGE_TIMEOUT = 3000;
 
 //layout
-const container = document.getElementById('container')
-
-//cache
+const container = document.getElementById('container');
 const elements = [];
-let lastE = 0
-for (let i = 0; i < container.children.length; i++) {
-    const node = container.children[i]
+let lastE = 0;
 
-    if (!node.hasAttribute("ignore")) {
-        const p = Number.parseInt(node.getAttribute('p') || 100);
-        const d = Number.parseInt(node.getAttribute('d') || 0);
-        const f = Number.parseInt(node.getAttribute('f') || 3);
-
-        const s = lastE + p;
-        const e = s + d;
-
-        lastE = e;
-
-        elements.push({
-            n: node,
-            d: node.style.display,
-            s: s,
-            e: e,
-            l: d,
-            f: d / f,
-        })
-    }
-}
+//lookup
+r_register(container);
 
 //observers
 const controller = new ScrollMagic.Controller();
@@ -43,16 +22,53 @@ const scene = new ScrollMagic.Scene({
     .setPin(container)
     .addTo(controller)
 
-if (controller.scrollPos() < INITIAL_STATE)
+//initiate
+if (controller.scrollPos() === 0)
     controller.scrollTo(INITIAL_STATE)
 
 //events
 let target = INITIAL_STATE
 let current = INITIAL_STATE
+let worker = 0;
 scene.on('update', e => {
     target = e.scrollPos
+    if (!worker) {
+        worker = setInterval(r_refresh, CHANGE_RATE);
+        setTimeout(r_sleep, CHANGE_TIMEOUT);
+    }
 })
-setInterval(() => {
+
+//functions
+function r_register(node) {
+    console.log("registered " + node)
+    for (let i = 0; i < node.children.length; i++) {
+        const child = node.children[i]
+
+        if (!child.hasAttribute("ignore")) {
+            const p = Number.parseInt(child.getAttribute('p') || 100);
+            const d = Number.parseInt(child.getAttribute('d') || 0);
+            const f = Number.parseInt(child.getAttribute('f') || 3);
+
+            const s = lastE + p;
+            const e = s + d;
+
+            lastE = e;
+
+            elements.push({
+                n: child,
+                d: child.style.display,
+                s: s,
+                e: e,
+                l: d,
+                f: d / f,
+            })
+        }
+        if (child.hasAttribute('recursive'))
+            register(child);
+    }
+}
+
+function r_refresh() {
     const pos = current += Math.round((target - current) * CHANGE_AMOUNT);
 
     elements.forEach(element => {
@@ -69,4 +85,9 @@ setInterval(() => {
                         1;
         }
     });
-}, CHANGE_RATE);
+}
+
+function r_sleep() {
+    clearInterval(worker);
+    worker = 0;
+}
